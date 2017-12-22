@@ -1,0 +1,101 @@
+.responsive-helper {
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  bottom: 0;
+  color: black;
+  max-width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 30px;
+  font-family: Helvetica, sans-serif;
+}
+.responsive-helper .bs-breakpoint {
+  display: block;
+  border-right: 1px solid #666;
+  height: 30px;
+  background-color: #333;
+  color: white;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 1.3rem;
+  float: left;
+}
+.responsive-helper .rh-collapse {
+  background-color: #333;
+  border-right: 1px solid #666;
+  color: white;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 1.3rem;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  content: '&raquo;';
+}
+.responsive-helper .rh-collapse > span:first-child {
+  display: none;
+}
+.responsive-helper .rh-collapse > span:last-child {
+  display: block;
+}
+.responsive-helper .rh-collapse.rh-collapsed {
+  content: '&laquo;';
+}
+.responsive-helper .rh-collapse.rh-collapsed > span:first-child {
+  display: block;
+}
+.responsive-helper .rh-collapse.rh-collapsed > span:last-child {
+  display: none;
+}
+.responsive-helper .modernizr-btn {
+  display: block;
+  height: 30px;
+  background-color: #333;
+  color: white;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 1.3rem;
+  float: left;
+  padding-left: 10px;
+  position: relative;
+  padding-right: 10px;
+  border-right: 1px solid #666;
+  cursor: pointer;
+}
+.responsive-helper .info-window {
+  display: block;
+  height: 30px;
+  background-color: #333;
+  color: white;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 1.1rem;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #666;
+}
+.responsive-helper .info-window > div {
+  text-align: left;
+}
+.responsive-helper .info-window .info2 {
+  line-height: 15px;
+}
+.responsive-helper .visible-xs,
+.responsive-helper .visible-xxs,
+.responsive-helper .visible-sm,
+.responsive-helper .visible-md,
+.responsive-helper .visible-lg {
+  width: 50px;
+}
+.responsive-helper .modernizr-features {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  max-width: 100%;
+  white-space: initial;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-break: keep-all;
+}

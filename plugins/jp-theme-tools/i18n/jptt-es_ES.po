@@ -1,0 +1,270 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: a23\n"
+"POT-Creation-Date: 2016-02-10 02:58-0430\n"
+"PO-Revision-Date: 2016-02-10 02:59-0430\n"
+"Last-Translator: Javier Prieto <jprieton@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin-options.php:2
+msgid "General Options"
+msgstr "Opciones generales"
+
+#: ../admin-options.php:5 ../settings-contact.php:5 ../settings/cdn.php:5
+#: ../settings/modules.php:5 ../settings/seo.php:5 ../settings/social.php:5
+#: ../settings/timthumb.php:5
+msgid "Settings saved."
+msgstr "Ajustes guardados."
+
+#: ../admin-options.php:26
+msgid "Remove WordPress Version Number"
+msgstr "Remover la versión de WordPress"
+
+#: ../admin-options.php:34
+msgid "Remove Category Feeds"
+msgstr ""
+
+#: ../admin-options.php:42
+msgid "Remove Post and Comment Feeds"
+msgstr ""
+
+#: ../admin-options.php:50
+msgid "Remove EditURI link"
+msgstr ""
+
+#: ../admin-options.php:58
+msgid "Remove Windows Live Writer"
+msgstr ""
+
+#: ../admin-options.php:66
+msgid "Remove index link"
+msgstr ""
+
+#: ../admin-options.php:74
+msgid "Remove previous link"
+msgstr ""
+
+#: ../admin-options.php:82
+msgid "Remove start link"
+msgstr ""
+
+#: ../admin-options.php:90
+msgid "Remove Links for Adjacent Posts"
+msgstr ""
+
+#: ../core/class-error.php:25
+msgid "Method not supported"
+msgstr "Método no soportado"
+
+#: ../core/class-error.php:38
+msgid "User not logged yet"
+msgstr "Usuario no registrado todavía"
+
+#: ../core/class-error.php:51
+msgid "User logged in yet"
+msgstr "Usuario conectado todavía"
+
+#: ../core/class-error.php:64
+msgid "Incorrect data"
+msgstr "Datos incorrectos"
+
+#: ../core/class-error.php:77
+#: ../modules/user-subscribe/class-user-subscribe.php:48
+msgid "Invalid email"
+msgstr "Email inválido"
+
+#: ../core/class-error.php:90
+#, php-format
+msgid "The %s field must be filled"
+msgstr "El campo %s es requerido"
+
+#: ../core/class-users.php:160
+msgid "Current pass invalid"
+msgstr ""
+
+#: ../includes/error.php:15
+msgid "Unauthorized"
+msgstr ""
+
+#: ../includes/error.php:38
+msgid "Forbidden"
+msgstr ""
+
+#: ../includes/error.php:61
+msgid "Not Found"
+msgstr ""
+
+#: ../includes/error.php:84
+msgid "Method not allowed"
+msgstr "Método no permitido"
+
+#: ../includes/general-template.php:49
+msgid "year"
+msgid_plural "years"
+msgstr[0] "año"
+msgstr[1] "años"
+
+#: ../includes/general-template.php:52
+msgid "month"
+msgid_plural "months"
+msgstr[0] "mes"
+msgstr[1] "meses"
+
+#: ../includes/general-template.php:55
+msgid "day"
+msgid_plural "days"
+msgstr[0] "día"
+msgstr[1] "días"
+
+#: ../includes/general-template.php:58
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "hora"
+msgstr[1] "horas"
+
+#: ../includes/general-template.php:61
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minuto"
+msgstr[1] "minutos"
+
+#: ../includes/general-template.php:65
+msgid "a few seconds"
+msgstr "unos segundos"
+
+#: ../includes/general-template.php:70
+#, php-format
+msgctxt "time_ago"
+msgid "%s ago"
+msgstr "hace %s"
+
+#: ../jp-theme-tools.php:96 ../settings/modules.php:2
+msgid "Modules"
+msgstr "Módulos"
+
+#: ../templates/email/contact-email.php:11
+msgid "Web Contact"
+msgstr ""
+
+#~ msgid "Polls"
+#~ msgstr "Encuestas"
+
+#~ msgid "Poll"
+#~ msgstr "Encuesta"
+
+#~ msgid "All Items"
+#~ msgstr "Todos los elementos"
+
+#~ msgid "result"
+#~ msgid_plural "results"
+#~ msgstr[0] "resultado"
+#~ msgstr[1] "resultados"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d resultado"
+#~ msgstr[1] "%d resultados"
+
+#~ msgid "Publications"
+#~ msgstr "Publicaciones"
+
+#~ msgid "Conditions"
+#~ msgstr "Condiciones"
+
+#~ msgid "Condition"
+#~ msgstr "Condición"
+
+#~ msgctxt "taxonomy_slug"
+#~ msgid "condition"
+#~ msgstr "condicion"
+
+#~ msgid "Operation Type"
+#~ msgstr "Tipo de operación"
+
+#~ msgid "Operation Types"
+#~ msgstr "Tipos de operación"
+
+#~ msgctxt "taxonomy_slug"
+#~ msgid "operation"
+#~ msgstr "operacion"
+
+#~ msgid "Cities"
+#~ msgstr "Ciudades"
+
+#~ msgid "City"
+#~ msgstr "Ciudad"
+
+#~ msgctxt "taxonomy_slug"
+#~ msgid "city"
+#~ msgstr "ciudad"
+
+#~ msgid "Property Type"
+#~ msgstr "Tipo de propiedad"
+
+#~ msgid "Property Types"
+#~ msgstr "Tipos de propiedad"
+
+#~ msgctxt "taxonomy_slug"
+#~ msgid "type"
+#~ msgstr "tipo"
+
+#~ msgid "Stratus"
+#~ msgstr "Estrato"
+
+#~ msgctxt "taxonomy_slug"
+#~ msgid "stratus"
+#~ msgstr "estrato"
+
+#~ msgid "Attributes"
+#~ msgstr "Atributos"
+
+#~ msgid "Attribute"
+#~ msgstr "Atributo"
+
+#~ msgctxt "taxonomy_slug"
+#~ msgid "attribute"
+#~ msgstr "atributo"
+
+#~ msgid "Publication"
+#~ msgstr "Publicación"
+
+#~ msgctxt "post_type_slug"
+#~ msgid "publication"
+#~ msgstr "publicacion"
+
+#~ msgid "publication"
+#~ msgstr "publicación"
+
+#~ msgctxt "post_type_slug"
+#~ msgid "publications"
+#~ msgstr "publicaciones"
+
+#~ msgid "Conversations"
+#~ msgstr "Conversaciones"
+
+#~ msgid "Conversation"
+#~ msgstr "Conversación"
+
+#~ msgctxt "post_type_slug"
+#~ msgid "conversation"
+#~ msgstr "conversacion"
+
+#~ msgid "conversation"
+#~ msgstr "conversación"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgctxt "taxonomy_slug"
+#~ msgid "property_type"
+#~ msgstr "tipo_propiedad"

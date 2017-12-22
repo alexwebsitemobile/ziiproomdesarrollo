@@ -1,0 +1,28 @@
+.cdn-sprite {
+  background: url('../images/cdn-sprite.png') no-repeat top left;
+  width: 20px;
+  height: 20px;
+}
+.cdn-sprite.icon-bootstrap {
+  background-position: 0px 0px;
+}
+.cdn-sprite.icon-google {
+  background-position: 0px -30px;
+}
+.cdn-sprite.icon-jquery {
+  background-position: 0px -60px;
+}
+.cdn-sprite.icon-msdn {
+  background-position: 0px -90px;
+}
+.form-table .cdn-sprite,
+.form-table .cdn-sprite + .dashicons {
+  display: inline-block;
+  font-size: 20px;
+}
+.no-margin-top {
+  margin-top: 0;
+}
+.column-featured {
+  width: 2.2em;
+}

@@ -1,0 +1,452 @@
+/*!
+ Theme Name:  ZiipRoom v1
+ Theme URI:   
+ Description: 
+ Author:      Alexander Contreras
+ Author URI:  
+ Version:     1.0.0
+
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@font-face {
+    font-family: 'fonts/poetsenoneregular';
+    src: url('fonts/poetsenone-regular-webfont.woff2') format('woff2'),
+        url('fonts/poetsenone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import "less/lesshat.less";
+@import "less/bootstrap-text-align.less";
+@import "less/wordpress-core.less";
+
+/* Colors */
+@orange: #F7941E;
+@blue: #25AAE1;
+@white: #FFFFFF;
+@black: #000000;
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Background */
+.bg-picture{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    z-index: 1;
+    .pattern{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.6);
+        z-index: 2;
+    }
+}
+
+header{
+    position: relative;
+    z-index: 99;
+    .logo-ziiproom{
+        display: inline-block;
+        padding: 30px 0;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    h1{
+        color: @white;
+        font-weight: 300;
+        font-size: 30px;
+    }
+}
+
+.content-form{
+    position: relative;
+    z-index: 99;
+    margin-top: 50px;
+    h2{
+        color: @white;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+.form-control::-webkit-input-placeholder { 
+    color:    @white;
+}
+.form-control:-moz-placeholder {
+    color:    @white;
+    opacity:  1;
+}
+.form-control::-moz-placeholder { 
+    color:    @white;
+    opacity:  1;
+}
+.form-control:-ms-input-placeholder { 
+    color:    @white;
+}
+.form-control::-ms-input-placeholder {
+    color:    @white;
+}
+
+.form-content{
+    .form-control{
+        background: rgba(255,255,255,0.6);
+        padding: 25px 18px;
+        border: none;
+        .box-shadow(none);
+        color: @white;
+    }
+    .btn{
+        color: @white;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        padding: 11px 12px;
+        background: @orange;
+        .transition(all .2s ease-in-out);
+        &:hover, &:focus{
+            background: @blue;
+        }
+    }
+}
+
+div.wpcf7-response-output{
+    margin: 0;
+    padding: 8px 0;
+    width: 100%;
+    .border-radius(5px);
+}
+
+div.wpcf7-validation-errors {
+    background: rgba(247,148,30,.6);
+    color: @white;
+    border: none;
+}
+
+div.wpcf7-mail-sent-ng {
+    background: rgba(221, 34, 34,.6);
+    color: @white;
+    border: none;
+}
+
+div.wpcf7-mail-sent-ok {
+    background: rgba(96, 178, 24,.6);
+    color: @white;
+    border: none;
+}
+
+.wpcf7-not-valid{
+    background: rgba(247, 148, 30, .6) !important;
+}
+
+.wpcf7-not-valid-tip{
+    display:none !important;
+}
+
+div.wpcf7 .ajax-loader {
+    background: url(images/loading.gif) center center no-repeat @blue;
+    width: 165px;
+    height: 49px;
+    .border-radius(5px);
+    position: absolute;
+    top: 0;
+    left: 11px;
+}
+
+/* Breakpoints */
+@lg: 1200px;
+@md: 992px;
+@sm: 768px;
+@xs: 480px;
+
+@media(max-width: ( @xs - 1 )) {
+    .hidden-xxs {
+        display: none !important;
+    }
+    .visible-xxs {
+        display: block !important;
+    }
+    .visible-xxs-block {
+        display: block !important;
+    }
+    .visible-xxs-inline {
+        display: inline !important;
+    }
+    .visible-xss-inline-block {
+        display: inline-block !important;
+    }
+}
+@media (min-width: @xs) {
+    .visible-xxs {
+        display: none !important;
+    }
+    .visible-xxs-block {
+        display: none !important;
+    }
+    .visible-xxs-inline {
+        display: none !important;
+    }
+    .visible-xss-inline-block {
+        display: none !important;
+    }
+}
+
+/* Social */
+@facebook : #3A5795;
+@google-plus: #DB4437;
+@instagram: #9D6B51;
+@linkedin: #0177B5;
+@twitter: #5EA9DD;
+
+.no-margin { margin: 0 !important }
+.no-padding { padding: 0 !important}
+
+.loading:empty { /* Coloca un gif animado en un elemento vacío */
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.m-a-0 { margin:        0 !important; }
+.m-t-0 { margin-top:    0 !important; }
+.m-r-0 { margin-right:  0 !important; }
+.m-b-0 { margin-bottom: 0 !important; }
+.m-l-0 { margin-left:   0 !important; }
+
+.p-a-0 { padding:        0 !important; }
+.p-t-0 { padding-top:    0 !important; }
+.p-r-0 { padding-right:  0 !important; }
+.p-b-0 { padding-bottom: 0 !important; }
+.p-l-0 { padding-left:   0 !important; }
+
+.ellipsis {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+label.required:after {
+    content: '*';
+    display: inline-block;
+    color: red;
+    margin-left: 0.5em;
+}
+
+.responsive-helper {
+    .bs-breakpoint {
+        display: block;
+        border-right: 1px solid #666;
+        height: 30px;
+        background-color: #333;
+        color: white;
+        font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+        font-size: 1.3rem;
+        float: left;    
+    }
+    .rh-collapse {
+        background-color: #333;
+        border-right: 1px solid #666;
+        color: white;
+        cursor: pointer;
+        display: block;
+        float: left;
+        font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+        font-size: 1.3rem;
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        content: '&raquo;';
+        &>span:first-child {
+            display: none;
+        }
+        &>span:last-child {
+            display: block;
+        }
+        &.rh-collapsed {
+            &>span:first-child {
+                display: block;
+            }
+            &>span:last-child {
+                display: none;
+            }
+            content: '&laquo;';
+        }
+    }
+    .modernizr-btn {
+        display: block;
+        height: 30px;
+        background-color: #333;
+        color: white;
+        font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+        font-size: 1.3rem;
+        float: left;
+        padding-left: 10px; 
+        position: relative;
+        padding-right: 10px;
+        border-right: 1px solid #666;
+        cursor: pointer;
+    }
+    .info-window {
+        display: block;
+        height: 30px;
+        background-color: #333;
+        color: white;
+        font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+        font-size: 1.1rem;
+        float: left;
+        padding-left: 10px; 
+        padding-right: 10px;
+        border-right: 1px solid #666;
+        > div {
+            text-align: left;
+        }
+        .info2 {
+            line-height: 15px;
+        }
+    }
+    .visible-xs,
+    .visible-xxs,
+    .visible-sm,
+    .visible-md,
+    .visible-lg{
+        width: 50px;
+    }
+    .modernizr-features {
+        text-align: left;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        max-width: 100%;
+        white-space: initial;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+        word-break: keep-all;
+    }
+    position: fixed;
+    z-index: 9999999;
+    left: 0;
+    bottom: 0;
+    color: black;
+    max-width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 30px;
+    font-family: Helvetica, sans-serif;
+}
+
+html, body {
+    text-rendering: geometricPrecision;
+}
+
+
+#fbcomments, .fb-comments, .fb-comments iframe[style], .fb-comments span {
+    width: 100% !important;
+}
+.sticky,
+.bypostauthor,
+.alignleft,
+.alignright,
+.aligncenter,
+.wp-caption,
+.wp-caption-text,
+.gallery-caption {
+}
+
+/** Navbar */
+body.admin-bar.fixed-navbar {
+    padding-top: 32px;
+    #main-navbar > nav {
+        top: 32px;
+    }
+}
+@media (max-width: 782px) {
+    body.admin-bar.fixed-navbar {
+        padding-top: 46px;
+        #main-navbar > nav {
+            top: 46px;
+        }
+    }
+}
+#main-navbar .fluid-container .navbar-right:first-of-type {
+    margin-right: 0;
+}
+@media (min-width: 992px) and  (max-width: 1200px){
+    .content-form {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    div.wpcf7 .ajax-loader {
+        width: 131.66px;
+        background: url(images/loading.gif) center center no-repeat @blue;
+    }
+}
+
+@media (min-width: 769px) and  (max-width: 992px){
+    h1{
+        font-size: 24px !important;
+        text-align: center;
+    } 
+    .content-form {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    div.wpcf7 .ajax-loader {
+        background: url(images/loading.gif) center center no-repeat @blue;
+        width: 165px;
+        height: 49px;
+        .border-radius(5px);
+        position: realtive;
+        top: auto;
+        left: 50%;
+        margin-left: -82.5px;
+    }
+    header{
+        .logo-ziiproom{
+            padding: 5px 0 !important;
+            img{
+                max-height: 75px;
+            }
+        }
+        h1{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .content-form{
+        margin-top: 5px;
+        margin-bottom: 35px;
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .wpcf7-response-output{
+        font-size: 14px;
+    }
+
+}
+
+.showcontrol{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 50px; // Increase height as required
+    margin-bottom: 30px;
+    padding: 0 20px !important; // Now only left & right padding
+}
